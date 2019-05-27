@@ -12,11 +12,11 @@ const {package: pkg, path: pkgPath} = readPkgUp.sync({
 })
 const appDirectory = path.dirname(pkgPath)
 
-function resolveKcdScripts() {
-  if (pkg.name === 'kcd-scripts') {
+function resolveAdaScripts() {
+  if (pkg.name === 'ada-scripts') {
     return require.resolve('./').replace(process.cwd(), '.')
   }
-  return resolveBin('kcd-scripts')
+  return resolveBin('ada-scripts')
 }
 
 // eslint-disable-next-line complexity
@@ -187,7 +187,7 @@ module.exports = {
   parseEnv,
   pkg,
   resolveBin,
-  resolveKcdScripts,
+  resolveAdaScripts,
   uniq,
   writeExtraEntry,
 }
