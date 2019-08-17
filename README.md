@@ -6,7 +6,7 @@
 
 <hr />
 
-[![Build Status][build-badge]][build]
+<!-- [![Build Status][build-badge]][build] -->
 [![Code Coverage][coverage-badge]][coverage]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmcharts]
